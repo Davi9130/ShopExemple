@@ -13,15 +13,15 @@ const FooterMain = () => {
     >
       Web Shop ©2020 Created by Davi
       <div style={{ float: "right" }}>
-        <a href="/facece">
+        <a target="_new" href="https://www.facebook.com">
           <FacebookOutlined style={{ fontSize: "35px", margin: "5px" }} />
         </a>
 
-        <a href="/insta">
+        <a target="_new" href="https://www.instagram.com">
           <InstagramOutlined style={{ fontSize: "35px", margin: "5px" }} />
         </a>
 
-        <a href="/yt">
+        <a target="_new" href="https://www.youtube.com">
           <YoutubeOutlined style={{ fontSize: "35px", margin: "5px" }} />
         </a>
       </div>

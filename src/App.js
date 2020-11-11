@@ -1,6 +1,8 @@
 import "./App.css";
 import Login from "./components/pages/Login";
 import Shop from "./components/pages/Shop";
+import Sobre from "./components/pages/Sobre";
+import Contato from "./components/pages/Contato";
 import { createGlobalStyle } from "styled-components";
 
 import Nav from "./components/organisms/Nav";
@@ -33,6 +35,8 @@ function App() {
           <Switch>
             <Route path="/" component={Login} exact />
             <Route path="/shop" component={Shop} />
+            <Route path="/sobre" component={Sobre} />
+            <Route path="/contato" component={Contato} />
             <Route component={Nopage} />
           </Switch>
           <FooterMain />

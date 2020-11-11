@@ -6,7 +6,7 @@ import ModalRegister from "./ModalRegister";
 import "antd/dist/antd.css";
 import { GlobalContext } from "../Hooks/GlobalContext";
 import Fundo from "../../static/imagens/fundo.webp";
-import { Typography, Space } from "antd";
+
 import { Spin } from "antd";
 
 const Login = () => {
@@ -17,8 +17,6 @@ const Login = () => {
   const setModalRegister = global.setModalRegister;
   const loading = global.loading;
   const setLoading = global.setLoading;
-
-  const { Text, Link } = Typography;
 
   const Container = styled.div`
     text-align: center;

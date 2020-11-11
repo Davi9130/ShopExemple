@@ -2,8 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from "../../static/imagens/logo.png";
+import { Avatar } from "antd";
+import { UserOutlined } from "@ant-design/icons";
 
 const Nav = () => {
+  const [logado, setLogado] = React.useState(false);
   const NavUl = styled.ul`
     display: table-cell;
   `;
@@ -25,6 +28,15 @@ const Nav = () => {
 
   return (
     <div style={{ padding: "10px", backgroundColor: "black" }}>
+      {logado ? (
+        <Link to="/perfil">
+          <Avatar
+            style={{ float: "right", marginTop: "20px" }}
+            size={64}
+            icon={<UserOutlined />}
+          />
+        </Link>
+      ) : null}
       <NavUl>
         <Link to="/shop">
           <img
